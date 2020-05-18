@@ -15,7 +15,7 @@ let food = {
 let direction = 'right';
 
 function criarBg() {
-    context.fillStyle = 'black';
+    context.fillStyle = '#a2c8ec';
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
@@ -27,7 +27,7 @@ function criarSnake() {
 }
 
 function drawFood() {
-    context.fillStyle = 'blue';
+    context.fillStyle = 'white';
     context.fillRect(food.x, food.y, box, box);
 }
 
