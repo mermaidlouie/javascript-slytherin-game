@@ -1,3 +1,19 @@
-* body {
-    margin-top: 0;
+body {
+    height: 95vh;
+    width: 95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #62a2df;
+}
+
+.go button{
+    color: #62a2df;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
