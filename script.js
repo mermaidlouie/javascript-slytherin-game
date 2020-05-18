@@ -1,6 +1,6 @@
-const canvas = document.querySelector('#snake');
+const canvas = document.getElementById("snake");
 const começar = document.querySelector('#comecar');
-const context = canvas.getContext('2d');
+const context = canvas.getContext("2d");
 const box = 32;
 let snake = [];
 snake[0] = {
