@@ -13,12 +13,12 @@ let food = {
 }
 
 
-function criarBG() {
+function createBG() {
     context.fillStyle = "black";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
-function criarCobrinha() {
+function createCobrinha() {
     for (i = 0; i < snake.length; i++) {
         context.fillStyle = "pink";
         context.fillRect(snake[i].x, snake[i].y, box, box);
@@ -48,8 +48,8 @@ function iniciarJogo() {
     if (snake[0].y > 15 * box && direction === 'down') snake[0].y = 0;
     if (snake[0].y < 0 && direction === 'up') snake[0].y = 16 * box;
 
-    criarBG();
-    criarCobrinha();
+    createBG();
+    createCobrinha();
     drawFood();
 
     let snakeX = snake[0].x;
